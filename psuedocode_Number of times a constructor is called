@@ -1,0 +1,18 @@
+//Code showing error
+answr = 3
+
+class Student(firstname: String = "Rohan") {
+    val firstName: String?=null
+    var lastName:String?=null
+    init() {
+        this.firstName = firstName
+    }
+    constructor(firstName:String, lastName.String): this(firstName){
+        this.lastName=lastName
+    }
+}
+fun main() {
+    val student:Student = Student("johny")
+    val student:Student = Student("Mark", "Twain")
+    val student: Student = Student("Penny", "Nebraska")
+}
