@@ -1,0 +1,17 @@
+class Student(firstName: String = "Mark") {
+    val firstName: String
+    var lastName: String? = null
+    init {
+        println("init block called")
+        this.firstName = firstName
+    }
+
+    constructor(firstName: String, lastName: String) : this(firstName) {
+        this.lastName = lastName
+    }
+}
+fun main() {
+    val student: Student = Student( firstName = "John")
+    //val student: Student = STudent("John", "Doe")
+    println("Name of the student is: ${student.firstName} ${student.lastName}")
+}
