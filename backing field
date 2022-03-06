@@ -1,0 +1,8 @@
+class Student() {
+    var name: String? = null
+    val isInitialized: Boolean
+            get() = (name?.length?:0) >0
+}
+fun main() {
+    println(Student().isInitialized)
+}
