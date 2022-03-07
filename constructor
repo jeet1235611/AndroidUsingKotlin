@@ -1,0 +1,12 @@
+fun main() {
+    val p1 = Person("Rahul")
+    print(p1.name)
+    //println(Person)
+}
+class Person (_name:String){
+    val name: String // matlab person ke paas ab name.
+    //java mein constructor ke andar daalate the
+    init {
+        name = _name
+    }
+}
